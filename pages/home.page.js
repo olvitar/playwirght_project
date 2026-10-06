@@ -14,8 +14,8 @@ export class HomePage extends BasePage {
 
   async openHomePage() {
     await this.open(URLs.homePage);
-    await this.expectTitle(URLs.title);
-    await this.header.expectLanguageAvailable(URLs.defaultLanguage);
+    await this.expectTitle(BasePage.title);
+    await this.header.expectLanguageAvailable(BasePage.defaultLanguage);
   }
 
   async acceptConsent() {
